@@ -1,0 +1,22 @@
+INSERT INTO patient(name, gender, birth_date, email, blood_group, created_at)
+VALUES
+    ('Prafull Kumar Vats', 'Male', '2007-09-28', 'prafullkumarvata9@gmail.com', 'O_POSITIVE', Now()),
+    ('Aarav Sharma', 'Male', '1995-03-14', 'aarav.sharma@example.com', 'A_POSITIVE', Now()),
+    ('Ananya Verma', 'Female', '1998-07-22', 'ananya.verma@example.com', 'B_POSITIVE', Now()),
+    ('Rohan Gupta', 'Male', '1990-11-05', 'rohan.gupta@example.com', 'AB_POSITIVE', Now()),
+    ('Priya Singh', 'Female', '2001-01-18', 'priya.singh@example.com', 'O_NEGATIVE', Now()),
+    ('Vikram Patel', 'Male', '1985-06-30', 'vikram.patel@example.com', 'A_NEGATIVE', Now()),
+    ('Sneha Joshi', 'Female', '1993-09-12', 'sneha.joshi@example.com', 'B_NEGATIVE', Now()),
+    ('Arjun Mehta', 'Male', '2000-12-25', 'arjun.mehta@example.com', 'O_POSITIVE', Now()),
+    ('Kavya Nair', 'Female', '1996-04-08', 'kavya.nair@example.com', 'AB_NEGATIVE', Now()),
+    ('Aditya Rao', 'Male', '1988-02-17', 'aditya.rao@example.com', 'A_POSITIVE', Now()),
+    ('Isha Kapoor', 'Female', '2003-08-29', 'isha.kapoor@example.com', 'B_POSITIVE', Now()),
+    ('Karan Malhotra', 'Male', '1992-10-10', 'karan.malhotra@example.com', 'O_POSITIVE', Now()),
+    ('Neha Agarwal', 'Female', '1997-05-03', 'neha.agarwal@example.com', 'A_POSITIVE', Now()),
+    ('Siddharth Jain', 'Male', '1983-12-01', 'siddharth.jain@example.com', 'B_POSITIVE', Now()),
+    ('Pooja Mishra', 'Female', '1999-03-27', 'pooja.mishra@example.com', 'O_NEGATIVE', Now()),
+    ('Rahul Yadav', 'Male', '1994-07-15', 'rahul.yadav@example.com', 'AB_POSITIVE', Now()),
+    ('Divya Reddy', 'Female', '2002-11-20', 'divya.reddy@example.com', 'A_NEGATIVE', Now()),
+    ('Manish Tiwari', 'Male', '1980-01-09', 'manish.tiwari@example.com', 'B_POSITIVE', Now()),
+    ('Shreya Iyer', 'Female', '1991-06-06', 'shreya.iyer@example.com', 'O_POSITIVE', Now()),
+    ('Nikhil Chauhan', 'Male', '2004-09-14', 'nikhil.chauhan@example.com', 'A_POSITIVE', Now());
