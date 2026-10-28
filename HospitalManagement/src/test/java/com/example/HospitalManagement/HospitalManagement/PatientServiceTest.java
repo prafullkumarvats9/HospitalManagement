@@ -36,7 +36,12 @@ public class PatientServiceTest {
 //        Patient patient = new Patient();
 //        patientRepository.save(patient);
 
-        patientService.testPatientTransaction();
-        patientService.deletePatient(1L);
+//        patientService.testPatientTransaction();
+
+        List<Patient> patientList = patientRepository.getAllPatientsWithAppointment();
+
+        for(var p: patientList) {
+            System.out.println(p);
+        }
     }
 }

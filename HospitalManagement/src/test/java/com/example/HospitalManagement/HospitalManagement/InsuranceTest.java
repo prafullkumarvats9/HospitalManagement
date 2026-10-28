@@ -4,6 +4,7 @@ import com.example.HospitalManagement.HospitalManagement.entity.Appointment;
 import com.example.HospitalManagement.HospitalManagement.entity.Insurance;
 import com.example.HospitalManagement.HospitalManagement.service.AppointmentService;
 import com.example.HospitalManagement.HospitalManagement.service.InsuranceService;
+import com.example.HospitalManagement.HospitalManagement.service.PatientService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +14,9 @@ import java.time.LocalDateTime;
 
 @SpringBootTest
 public class InsuranceTest {
+
+    @Autowired
+    private PatientService patientService;
 
     @Autowired
     private InsuranceService insuranceService;
@@ -31,6 +35,10 @@ public class InsuranceTest {
         var updatedInsurance = insuranceService.assignInsuranceToPatient(insurance, 1L);
 
         System.out.println(updatedInsurance);
+//        patientService.deletePatient(1L);
+
+        var patient = insuranceService.removeInsuranceOfAPatient(1L);
+        System.out.println(patient);
     }
 
     @Test

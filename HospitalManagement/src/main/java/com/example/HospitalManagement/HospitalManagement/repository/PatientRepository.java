@@ -22,4 +22,7 @@ public interface  PatientRepository extends JpaRepository<Patient, Long> {
     @Query("select new com.example.HospitalManagement.HospitalManagement.dto.BloodGroupStats(p.bloodGroup,"
             + "COUNT(p)) from Patient p group by p.bloodGroup order by COUNT(p)")
     List<BloodGroupStats> getBloodGroupStats();
+
+    @Query("select p from Patient p LEFT JOIN FETCH p.appointment")
+    List<Patient> getAllPatientsWithAppointment();
 }

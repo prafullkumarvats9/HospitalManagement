@@ -37,11 +37,12 @@ public class Patient {
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "patient_insurance")   // Used always the owning side.
     private Insurance insurance;             // Owning Side.
 
-    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @ToString.Exclude
     private Set<Appointment> appointments = new HashSet<>();
 
 }
