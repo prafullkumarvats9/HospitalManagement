@@ -18,9 +18,13 @@ public class InsuranceService {
     private final PatientRepository patientRepository;
 
     @Transactional
-    public void assignInsuranceToPatient(Insurance insurance, Long patientId) {
+    public Insurance assignInsuranceToPatient(Insurance insurance, Long patientId) {
         Patient patient = patientRepository.findById(patientId).orElseThrow();
 
         patient.setInsurance(insurance);
+
+        insurance.setPatient(patient);   // Done to maintain bi-directional consistency. This is optional.
+        return insurance;
     }
+
 }

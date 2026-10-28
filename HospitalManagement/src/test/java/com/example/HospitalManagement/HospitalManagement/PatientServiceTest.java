@@ -37,5 +37,6 @@ public class PatientServiceTest {
 //        patientRepository.save(patient);
 
         patientService.testPatientTransaction();
+        patientService.deletePatient(1L);
     }
 }

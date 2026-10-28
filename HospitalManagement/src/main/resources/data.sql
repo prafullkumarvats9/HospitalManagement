@@ -20,3 +20,20 @@ VALUES
     ('Manish Tiwari', 'Male', '1980-01-09', 'manish.tiwari@example.com', 'B_POSITIVE', Now()),
     ('Shreya Iyer', 'Female', '1991-06-06', 'shreya.iyer@example.com', 'O_POSITIVE', Now()),
     ('Nikhil Chauhan', 'Male', '2004-09-14', 'nikhil.chauhan@example.com', 'A_POSITIVE', Now());
+
+
+INSERT INTO doctor (name, specialization, email)
+VALUES
+    ('Dr. Rakesh Mehta', 'Cardiology', 'rakesh.mehta@example.com'),
+    ('Dr. Sneha Kapoor', 'Dermatology', 'sneha.kapoor@example.com'),
+    ('Dr. Arjun Nair', 'Orthopedics', 'arjun.nair@example.com'),
+    ('Dr. Priya Sharma', 'Neurology', 'priya.sharma@example.com'),
+    ('Dr. Vikram Rao', 'Pediatrics', 'vikram.rao@example.com'),
+    ('Dr. Anita Desai', 'Gynecology', 'anita.desai@example.com'),
+    ('Dr. Sanjay Gupta', 'General Medicine', 'sanjay.gupta@example.com'),
+    ('Dr. Meera Iyer', 'Psychiatry', 'meera.iyer@example.com'),
+    ('Dr. Karan Malhotra', 'ENT', 'karan.malhotra@example.com'),
+    ('Dr. Neha Verma', 'Ophthalmology', 'neha.verma@example.com'),
+    ('Dr. Rohit Banerjee', 'Oncology', 'rohit.banerjee@example.com'),
+    ('Dr. Kavita Joshi', 'Endocrinology', 'kavita.joshi@example.com'),
+    ('Dr. Amit Choudhary', 'Urology', 'amit.choudhary@example.com');

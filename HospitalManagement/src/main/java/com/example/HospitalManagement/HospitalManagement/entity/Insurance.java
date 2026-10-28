@@ -2,10 +2,7 @@ package com.example.HospitalManagement.HospitalManagement.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
@@ -16,6 +13,8 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@ToString
 public class Insurance {
 
     @Id
@@ -23,7 +22,7 @@ public class Insurance {
     private Long id;
 
     @Column(nullable = false, unique = true, length = 50)
-    private String PolicyNumber;
+    private String policyNumber;
 
     @Column(nullable = false, length = 100)
     private String provider;
@@ -36,6 +35,7 @@ public class Insurance {
     private LocalDateTime createdAt;
 
     @OneToOne(mappedBy = "insurance")
+    @ToString.Exclude
     private Patient patient;   // Jis side mapped by hoga woh automatically Inverse Side hoga and uske opposite side waala Owning side hoga.
 
 }
